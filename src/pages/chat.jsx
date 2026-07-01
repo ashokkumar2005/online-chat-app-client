@@ -1,6 +1,25 @@
+import Chat from "../componets/chatbox.jsx";
+import Nav from "../componets/navbar.jsx";
+import Sidebar from "../componets/side.jsx";
+import Onlineuser from "../componets/onlineuser.jsx";
 
-export default function chat(){
+function chat(){
     return(
-        <h1>chat page</h1>
+        <>
+        <div>
+            <Chat/>
+        </div>
+        <div>
+            <Nav/>
+        </div>
+        <div>
+            <Sidebar/>
+        </div>
+        <div>
+            <Onlineuser/>
+        </div>
+        </>
     )
 }
+
+export default chat;
